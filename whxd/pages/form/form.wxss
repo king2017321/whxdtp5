@@ -1,0 +1,77 @@
+/* pages/form/form.wxss */
+
+page{
+  width: 100%;
+  height: 100%;
+  background-color: #F0F9FA;
+}
+.swip-img image{
+  width:750rpx;
+  height:400rpx;
+}
+swiper{
+  width:750rpx;
+  height:400rpx;
+}
+
+.form{
+  width: 100%;
+  height:690rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+
+.form-box{
+  display: flex;
+  padding: 20rpx 40rpx;
+  width: 80%;
+  font-size: 16px;
+}
+
+.form-name{
+  background-color: #F1F1F1;
+  height: 60rpx;
+  font-size: 16px;
+  
+}
+
+.form-right{
+  width: 200px;
+}
+
+.form-submit{
+
+  margin: 20rpx auto;
+  width: 100%;
+  display: flex;
+ justify-content: center;
+}
+
+.form-submit-sub button{
+  width: 300rpx;
+  background-color: #FF8402;
+  color: #fff;
+  margin-right: 50rpx;
+}
+
+.form-submit-res button{
+  width: 300rpx;
+  background-color: #066FB3;
+  color: #fff;
+}
+
+.form-submit-call button{
+
+  margin: 40rpx auto;
+  display: flex;
+  width: 600rpx;
+ justify-content: center;
+ color: #4C8C50;
+ background-color: #F3F7FA;
+ border: 1px solid #4C8C50;
+}
+
+.bottom-img image{
+  width: 750rpx;
+  height: 400rpx;
+}

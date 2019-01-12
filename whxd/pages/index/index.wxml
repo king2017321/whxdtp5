@@ -1,0 +1,367 @@
+<!--index.wxml-->
+<view class="top" bindtap='btnCall'>
+  <image src='/images/logo.jpg'></image>
+</view>
+<view class='swip'>
+  <swiper indicator-dots="{{indicatorDots}}" indicatorActiveColor="{{indicatorActiveColor}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+    <block wx:for="{{imgUrls}}" wx:key>    
+      <swiper-item class="swip-img">
+        <image src="{{item}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class='pingpai'>
+
+  <view class='pingpai-left' bindtap='navBtn'>
+    <view class='pingpai-img'><image src='/images/3-pp.png'></image></view>
+    <view class='pingpai-text'>
+      <view class='pp-text-top'><text>医院品牌</text></view>
+      <view class='pp-text-buttom'><text>医院介绍 全面了解</text></view>
+    </view>
+  </view>
+
+  <view class='pingpai-right' bindtap='navBtn'>
+    <view class='ppr-img'><image src='/images/3.1-zj.png'></image></view>
+    <view class='ppr-text'>
+      <view class='ppr-text-top'><text>专家团队</text></view>
+      <view class='ppr-text-buttom'><text>足不出户 预约咨询</text></view>
+    </view>
+  </view>
+  
+</view>
+<view class='pingpai'>
+
+  <view class='pingpai-left' bindtap='navBtn'>
+    <view class='pingpai-img'><image src='/images/3.2-lx.png'></image></view>
+    <view class='pingpai-text'>
+      <view class='pp-text-top'><text>来院路线</text></view>
+      <view class='pp-text-buttom'><text>熟知路线 轻松就诊</text></view>
+    </view>
+  </view>
+
+  <view class='pingpai-right' bindtap='navBtn'>
+    <view class='ppr-img'><image src='/images/3.3-yy.png'></image></view>
+    <view class='ppr-text'>
+      <view class='ppr-text-top'><text>预约挂号</text></view>
+      <view class='ppr-text-buttom'><text>无需排队 免挂号费</text></view>
+    </view>
+  </view>
+</view>
+
+<view class="nxzz">
+  <view class='nxzz-top'>
+    <view class='nxzz-left nxjb-left'>
+      <image src='/images/txy.png'></image>
+      <text>女性常见疾病症状</text>
+    </view>
+    <view class='nxzz-right' bindtap='navBtn'>
+      <text>快速咨询病情</text>
+    </view>
+  </view>
+
+  <view class='nxzz-buttom'>
+    <view class='nxzz-but-img' wx:for="{{zxzzlist}}" wx:key>
+      <image src='{{item.thumb}}'></image>
+      <text>{{item.title}}</text>
+    </view>
+   
+  </view>
+</view>
+
+<view class='nxjb'>
+  <view class='nxzz-top'>
+    <view class='nxzz-left nxjb-left'>
+      <image src='/images/txy.png'></image>
+      <text>女性疾病专区</text>
+    </view>
+    <view class='nxzz-right' bindtap='btnCall'>
+      <text>一键免费通话</text>
+    </view>
+  </view>
+
+  <view class='nxjb-buttom'>
+    <view class='nxjb-box1'>
+      <view class='nxjb-box1-top'>
+        <view class='nxjb-jh'>
+          <view class='nxjb-jh-blue'></view>
+          <view class='nxjb-jh-text'>计划生育</view>
+          <view class='nxjb-jh-border'>——————</view>
+        </view>
+        <view class='nxjb-more' bindtap='navBtn'>
+          <view class='nxjb-more-box'>more</view>
+        </view>
+      </view>
+      <view class='nxjb-box1-buttom'>
+        <view class='nxjb-b1-bu-box1'>
+          <view class='nxjb-b1-bu-box2'><text>无痛人流</text></view>
+          <view class='nxjb-b1-bu-box2'><text>早孕检查</text></view>
+          <view class='nxjb-b1-bu-box2'><text>药流</text></view>
+          <view class='nxjb-b1-bu-box2'><text>宫外孕</text></view>
+          <view class='nxjb-b1-bu-box2'><text>上环</text></view>
+          <view class='nxjb-b1-bu-box2'><text>取环</text></view>
+          <view class='nxjb-b1-bu-box2'><text>清宫刮宫</text></view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+   <view class='nxjb-buttom'>
+    <view class='nxjb-box1'>
+      <view class='nxjb-box1-top'>
+        <view class='nxjb-jh'>
+          <view class='nxjb-jh-blue'></view>
+          <view class='nxjb-jh-text'>产科中心</view>
+          <view class='nxjb-jh-border'>——————</view>
+        </view>
+        <view class='nxjb-more' bindtap='navBtn'>
+          <view class='nxjb-more-box'>more</view>
+        </view>
+      </view>
+      <view class='nxjb-box1-buttom'>
+        <view class='nxjb-b1-bu-box1'>
+          <view class='nxjb-b1-bu-box2'><text>四维彩超</text></view>
+          <view class='nxjb-b1-bu-box2'><text>唐氏筛查</text></view>
+          <view class='nxjb-b1-bu-box2'><text>nt检查</text></view>
+          <view class='nxjb-b1-bu-box2'><text>胎心监测</text></view>
+          <view class='nxjb-b1-bu-box2'><text>月子中心</text></view>
+          <view class='nxjb-b1-bu-box2'><text>产后康复</text></view>
+    
+        </view>
+      </view>
+    </view>
+  </view>
+
+    <view class='nxjb-buttom'>
+      <view class='nxjb-box1'>
+        <view class='nxjb-box1-top'>
+          <view class='nxjb-jh'>
+            <view class='nxjb-jh-blue'></view>
+            <view class='nxjb-jh-text'>妇科疾病</view>
+            <view class='nxjb-jh-border'>——————</view>
+          </view>
+          <view class='nxjb-more' bindtap='navBtn'>
+            <view class='nxjb-more-box'>more</view>
+          </view>
+        </view>
+        <view class='nxjb-box1-buttom'>
+          <view class='nxjb-b1-bu-box1'>
+            <view class='nxjb-b1-bu-box2'><text>白带异常</text></view>
+            <view class='nxjb-b1-bu-box2'><text>阴道瘙痒</text></view>
+            <view class='nxjb-b1-bu-box2'><text>阴道出血</text></view>
+            <view class='nxjb-b1-bu-box2'><text>月经不调</text></view>
+            <view class='nxjb-b1-bu-box2'><text>宫颈糜烂</text></view>
+            <view class='nxjb-b1-bu-box2'><text>宫颈炎</text></view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='nxjb-buttom'>
+      <view class='nxjb-box1'>
+        <view class='nxjb-box1-top'>
+          <view class='nxjb-jh'>
+            <view class='nxjb-jh-blue'></view>
+            <view class='nxjb-jh-text'>不孕不育</view>
+            <view class='nxjb-jh-border'>——————</view>
+          </view>
+          <view class='nxjb-more' bindtap='navBtn'>
+            <view class='nxjb-more-box'>more</view>
+          </view>
+        </view>
+        <view class='nxjb-box1-buttom'>
+          <view class='nxjb-b1-bu-box1'>
+            <view class='nxjb-b1-bu-box2'><text>女性不孕</text></view>
+            <view class='nxjb-b1-bu-box2'><text>优生优育</text></view>
+            <view class='nxjb-b1-bu-box2'><text>排卵检测</text></view>
+            <view class='nxjb-b1-bu-box2'><text>女性不孕</text></view>
+            <view class='nxjb-b1-bu-box2'><text>备孕检查</text></view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+</view>
+
+<view class='zxfyImgs'>
+  <view class='zxfyImgs-top' bindtap='navBtn'>
+      <image src='/images/6-1.jpg'></image>
+      <image src='/images/6-2.jpg'></image>
+  </view>
+  <view class='zxfyImgs-buttom' bindtap='navBtn'>
+      <image src='/images/6-3.jpg'></image>
+      <image src='/images/6-4.jpg'></image>
+  </view>
+
+  
+
+
+  
+</view>
+
+<view class='nxjb nxjb-tsjs'>
+  <view class='nxzz-top'>
+    <view class='nxzz-left nxjb-left'>
+      <image src='/images/txy.png'></image>
+      <text>特色技术</text>
+    </view>
+    
+  </view>
+
+  <view class='nxjb-buttom'>
+    <view class='tsjs-box1'>
+      <view class='tsjs-box1-img'>
+        <image src='/images/7-rl.png'></image>
+      </view>
+      <view class='tsjs-box1-center'>
+        <view class=''><text>无痛人流</text></view>
+        <view class='tsjs-box1-center-gqj'><text>宫腔镜下取胚</text></view>
+      </view>
+      <view class='tsjs-box1-more'>
+        <view class='tsjs-box1-more-big' bindtap='navBtn'>
+          <view class='tsjs-box1-more-small'>
+           <view class='tsjs-box1-more-small-s'>
+              <view class='tsjs-box1-more-small-g'>
+                <text class='tsjs-geng'>更多</text>
+              </view>
+              <view class='tsjs-box1-more-small-m'>
+                <text>MORE</text>
+              </view>  
+           </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='nxjb-buttom'>
+    <view class='tsjs-box1'>
+      <view class='tsjs-box1-img'>
+        <image src='/images/7-cc.png'></image>
+      </view>
+      <view class='tsjs-box1-center'>
+        <view class=''><text>四维彩超</text></view>
+        <view class='tsjs-box1-center-gqj'><text>美国四维仪器</text></view>
+      </view>
+      <view class='tsjs-box1-more'>
+        <view class='tsjs-box1-more-big' bindtap='navBtn'>
+          <view class='tsjs-box1-more-small'>
+           <view class='tsjs-box1-more-small-s'>
+              <view class='tsjs-box1-more-small-g'>
+                <text class='tsjs-geng'>更多</text>
+              </view>
+              <view class='tsjs-box1-more-small-m'>
+                <text>MORE</text>
+              </view>  
+           </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='nxjb-buttom'>
+    <view class='tsjs-box1'>
+      <view class='tsjs-box1-img'>
+        <image src='/images/7-rx.png'></image>
+      </view>
+      <view class='tsjs-box1-center'>
+        <view class=''><text>乳腺疾病</text></view>
+        <view class='tsjs-box1-center-gqj'><text>安珂微创手术</text></view>
+      </view>
+      <view class='tsjs-box1-more'>
+        <view class='tsjs-box1-more-big' bindtap='navBtn'>
+          <view class='tsjs-box1-more-small'>
+           <view class='tsjs-box1-more-small-s'>
+              <view class='tsjs-box1-more-small-g'>
+                <text class='tsjs-geng'>更多</text>
+              </view>
+              <view class='tsjs-box1-more-small-m'>
+                <text>MORE</text>
+              </view>  
+           </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='nxjb-buttom'>
+    <view class='tsjs-box1'>
+      <view class='tsjs-box1-img'>
+        <image src='/images/7-zx.png'></image>
+      </view>
+      <view class='tsjs-box1-center'>
+        <view class=''><text>私密整形</text></view>
+        <view class='tsjs-box1-center-gqj'><text>菲蜜微创技术</text></view>
+      </view>
+      <view class='tsjs-box1-more'>
+        <view class='tsjs-box1-more-big' bindtap='navBtn'>
+          <view class='tsjs-box1-more-small'>
+           <view class='tsjs-box1-more-small-s'>
+              <view class='tsjs-box1-more-small-g'>
+                <text class='tsjs-geng'>更多</text>
+              </view>
+              <view class='tsjs-box1-more-small-m'>
+                <text>MORE</text>
+              </view>  
+           </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  
+</view>
+
+
+<view class='nxjb nxjb-qwzj'>
+  <view class='nxzz-top'>
+    <view class='nxzz-left nxjb-left'>
+      <image src='/images/txy.png'></image>
+      <text>权威专家女性专病专治</text>
+    </view>
+    <view class='nxzz-right' bindtap='navBtn'>
+      <text>费用评估</text>
+    </view>
+  </view>
+
+  <view class='qwzj'>
+    <view class='qwzj-box1'> 
+      <view class='qwzj-box1-top'><image src='/images/qr.jpg'></image></view>
+      <view class='qwzj-box1-conter'><text>主治医师</text></view>
+      <view class='qwzj-box1-bottom'><text>邱锐</text></view>
+    </view>
+
+    <view class='qwzj-box2'> 
+      <view class='qwzj-box2-top'><image src='/images/xyh.jpg'></image></view>
+      <view class='qwzj-box2-conter'><text>主治医师</text></view>
+      <view class='qwzj-box2-bottom'><text>徐燕华</text></view>
+    </view>
+
+     <view class='qwzj-box3'> 
+      <view class='qwzj-box3-top'><image src='/images/zhp.jpg'></image></view>
+      <view class='qwzj-box3-conter'><text>主治医师</text></view>
+      <view class='qwzj-box3-bottom'><text>张海平</text></view>
+    </view>
+  </view>
+</view>
+
+<view class='nxjb nxjb-xdfc'>
+  <view class='nxzz-top'>
+    <view class='nxzz-left nxjb-left'>
+      <image src='/images/txy.png'></image>
+      <text>武汉现代妇产医院</text>
+    </view>
+  </view>
+  <view class='xdfc-dt-img'>
+    <image src='/images/10-dt.jpg'></image>
+    <image src='/images/11.jpg'></image>
+  </view>
+
+  
+</view>
+
+

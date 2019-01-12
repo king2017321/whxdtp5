@@ -1,0 +1,402 @@
+page{
+  width: 100%;
+  height: 100%;
+  background-color: #F0F9FA;
+}
+.top{
+  display: flex;
+  flex-direction: column;
+}
+.top image{
+  width: 750rpx;
+  height: 100rpx;
+}
+
+.swip-img image{
+  width:750rpx;
+  height:400rpx;
+}
+swiper{
+  width:750rpx;
+  height:400rpx;
+}
+
+/*医院品牌 专家团队栏目样式*/
+.pingpai{
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  background-color  : #fff;
+}
+.pingpai-left{
+  width: 50%;
+  height: 100%;
+  border-right: 1px solid #D6D6D6;
+  display: flex;
+}
+.pingpai-img{
+   margin: auto 10px;
+}
+.ppr-img{
+   margin: auto 10px;
+}
+.pingpai-img image{
+  width: 80rpx;
+  height: 80rpx;
+ 
+}
+.pp-text-top{
+  font-weight: bold;
+  font-size: 18px;    
+}
+.ppr-text-top{
+  font-weight: bold;
+  font-size: 18px; 
+}
+.pingpai-text{
+  margin-top: 8px;
+}
+.ppr-img image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.pingpai-right{
+  display: flex;
+}
+.pp-text-buttom{
+  font-size: 14px;
+  color: #8A8687;
+}
+
+.ppr-text-buttom{
+  font-size: 14px;
+  color: #8A8687;
+}
+.ppr-text{
+  margin-top: 8px;
+}
+
+/*女性常见疾病症状*/
+.nxzz{
+  width: 100%;
+  height:750rpx;
+  background-color: #fff;
+  margin-top: 15px;
+}
+.nxzz-top{
+  width: 100%;
+  height: 90rpx;
+  border-bottom: 1px solid #D6D6D6;
+
+  display: flex;
+  justify-content: space-between;
+}
+.nxzz-left image{
+  height: 40rpx;
+  width: 40rpx;
+  color: #d4237a;
+  margin-right: 5px;
+
+}
+.nxzz-right{
+  width: 205rpx;   
+  height: 60rpx;
+  background-color: #EF9C04;
+  font-size: 16px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 60rpx;
+  display: flex;
+  margin:auto 18px;
+  border-radius:20px;
+   color: #fff;
+}
+.nxzz-right text{
+  margin: auto auto;
+
+}
+.nxzz-left{
+  margin-left: 20px;
+  color: #d4237a;
+  font-weight: bold;  
+   display: flex;
+  margin: auto;
+ align-items:center;
+
+}
+
+.nxzz-buttom{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.nxzz-but-img{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  font-size: 14px;
+  color: #8A8687;
+  text-align: center;
+}
+.nxzz-but-img image{
+  width: 120rpx;
+  height: 120rpx;
+  margin-bottom: 10px;
+}
+
+/*女性疾病专区*/
+.nxjb{
+  width: 100%;
+  height:1179rpx;
+  background-color: #fff;
+  margin-top: 15px;
+}
+.nxjb-left{
+  margin-left: 15px;
+}
+.nxjb-box1-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nxjb-jh-blue{
+  width: 11rpx;
+  height: 40rpx;
+  background-color: blue;
+}
+.nxjb-jh{
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+
+}
+.nxjb-box1{
+  width: 90%;
+  height: 245rpx;
+  background-color: #EAF4FB;
+  margin: 10px auto;
+}
+.nxjb-jh-border{
+  color: #728393;
+  font-weight: bold;
+}
+.nxjb-jh-text{
+  margin: auto 10rpx;
+  font-weight: bold;
+}
+.nxjb-more-box{
+  height:38rpx;
+  width:91rpx;
+  border: 1px dashed #8A8687;
+  text-align: center;
+  line-height: 34rpx;
+  font-size: 15px;
+}
+.nxjb-more{
+  display: flex;
+  align-items: center;
+  margin-right: 20rpx;
+}
+
+.nxjb-b1-bu-box1{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+}
+.nxjb-b1-bu-box2{
+  border: 1px solid #D4D8DB;
+  margin:10rpx 10rpx;
+  display: flex; 
+  height: 100% ;
+  line-height: 100% ;
+  justify-content: center;
+  
+}
+.nxjb-b1-bu-box2 text{
+  font-size: 16px;
+  padding: 10rpx;
+  color: #6E7275;
+}
+.nxjb-buttom{
+  margin-bottom: 10rpx;
+}
+
+/*费用咨询图片组*/
+.zxfyImgs{
+  background-color: #EAF4FB;
+  width: 100%;
+  height: 150px;
+
+}
+.zxfyImgs-top {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 17px;
+}
+
+.zxfyImgs-buttom {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.zxfyImgs image{
+  width: 350rpx;
+  height: 120rpx;
+ 
+}
+
+/*特色技术*/
+.tsjs-box1{
+  width: 90%;
+  height: 150rpx;
+  background-color: #EAF4FB;
+  margin: 30rpx auto;
+  border-radius: 75rpx;
+  display: flex;
+}
+
+.tsjs-box1-img image{
+  width: 150rpx;
+  height: 150rpx;
+}
+.tsjs-box1-more{
+  margin-right: 68px;
+  margin: auto;
+  
+}
+.tsjs-box1-more-big{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px dashed #8045DC;
+  
+}
+.tsjs-box1-more-small{
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: #FE7A1E;
+  margin-left: 3px;
+  margin-top: 3px;
+  text-align: center;
+
+}
+
+.tsjs-box1-more-small-g{
+  padding-bottom: 0px;
+}
+.tsjs-box1-more-small text{
+  font-size: 14px;
+  color:#fff;
+}
+.tsjs-geng{
+ top: 5px;
+}
+
+.tsjs-box1-more-small-g text{
+  font-size: 14px;
+  color:#fff;
+}
+.tsjs-box1-more-small-m{
+  padding-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.tsjs-box1-more-small-m text{
+  font-size: 14px;
+  color:#fff;
+}
+.tsjs-box1-center {
+  font-size: 16px;
+  margin:auto;
+  margin-left: 15px;
+}
+.tsjs-box1-center-gqj text{
+ color: #6197A6;
+ margin-top: 2px;
+}
+
+.nxjb-tsjs{
+  height: 853rpx;
+}
+
+/*权威专家女性专病专治*/
+.qwzj-box2-top image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+.qwzj-box1-conter text{
+  font-size: 16px;
+  color: #d4237a;
+  text-shadow:0px 0px 1px #d4237a;
+}
+.qwzj-box1-top image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+.qwzj-box3-top image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+.qwzj{
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.qwzj-box2-conter text{
+  font-size: 16px;
+  color: #d4237a;
+  text-shadow:0px 0px 1px #d4237a;
+}
+.qwzj-box3-conter text{
+  font-size: 16px;
+  color: #d4237a;
+  text-shadow:0px 0px 1px #d4237a;
+}
+.qwzj-box1-bottom text{
+  font-size: 17px;
+  text-shadow:0px 0px 1px #2F3332;
+}
+
+.qwzj-box2-bottom text{
+  font-size: 17px;
+  text-shadow:0px 0px 1px #2F3332;
+  
+}
+
+.qwzj-box3-bottom text{
+  font-size: 17px;
+  text-shadow:0px 0px 1px #2F3332;
+  
+}
+.qwzj-box1{
+  text-align: center;
+}
+.qwzj-box2{
+  text-align: center;
+}
+.qwzj-box3{
+  text-align: center;
+}
+
+.nxjb-qwzj{
+  height: 452rpx;
+}
+.nxjb-xdfc{
+  height: 800rpx;
+}
+
+.xdfc-dt-img image{
+  width: 750rpx;
+  height: 400rpx;
+  
+}

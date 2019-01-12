@@ -1,0 +1,47 @@
+{
+  "pages":[
+        "pages/index/index",
+    "pages/form/form",
+    "pages/phone/phone",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "武汉现代妇产医院-阿辉",
+    "navigationBarTextStyle":"black"
+  
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"/images/12-sy.png",
+        "selectedIconPath":"/images/12-sy.png"
+      },
+      {
+        "pagePath": "pages/form/form",
+        "text": "费用评估",
+        "iconPath": "/images/12-gh.png",
+        "selectedIconPath": "/images/12-gh.png",
+        "active": false
+      },
+      {
+        "pagePath": "pages/phone/phone",
+        "text": "通话",
+        "iconPath": "/images/12-th.png",
+        "selectedIconPath": "/images/12-th.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "微信",
+        "iconPath": "/images/12-wx.png",
+        "selectedIconPath": "/images/12-wx.png"
+      }
+    ],
+    "color":"#71A6EB",
+    "borderStyle":"white"
+  }
+}

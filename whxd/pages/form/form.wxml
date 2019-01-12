@@ -1,0 +1,58 @@
+<view class='swip'>
+  <swiper indicator-dots="{{indicatorDots}}" indicatorActiveColor="{{indicatorActiveColor}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+    <block wx:for="{{imgUrls}}" wx:key>    
+      <swiper-item class="swip-img">
+        <image src="{{item}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class='form'>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+       <view class='form-box'>
+          <view class='form-left'><text>*姓名：</text></view>
+          <view class='form-right'>
+            <input placeholder="请输入您的姓名" name='name'  value="{{ name}}" placeholder-class="form-name"/>
+          </view>
+       </view>
+
+        <view class='form-box'>
+          <view class='form-left'><text>*年纪：</text></view>
+          <view class='form-right'>
+            <input placeholder="请输入您的年纪"  name="age" value="{{age}}" placeholder-class="form-name"/>
+          </view>
+       </view>
+
+        <view class='form-box'>
+          <view class='form-left'><text>*手机：</text></view>
+          <view class='form-right'>
+            <input placeholder="手机号码为就诊凭证" name="phone"  value="{{phone}}" placeholder-class="form-name"/>
+          </view>
+       </view>
+
+        <view class='form-box'>
+          <view class='form-left'><text>*就诊项目：</text></view>
+          <view class='form-right'>
+            <input placeholder="请输入就诊项目"  name="project" value="{{project}}"  placeholder-class="form-name"/>
+          </view>
+       </view>
+
+       <view class='form-submit'>
+          <view class='form-submit-sub'> <button form-type="submit">提交</button> </view>
+          <view class='form-submit-res'> <button form-type="reset">清空</button> </view>
+       </view>
+
+       <view class='form-submit-call'>
+          <view class='form-submit-sub' bindtap='btnCall'> <button >直接拨打电话预约</button> </view>
+  
+       </view>
+
+       
+    </form>
+</view>
+
+<view class='bottom-img'>
+  <image src='/images/11.jpg'></image>
+
+</view>
